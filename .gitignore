@@ -1,0 +1,17 @@
+.pio/
+.vscode/
+__pycache__/
+*.pyc
+# CAD exports are committed deliberately; ignore backups
+*.FCBak
+*.FCStd1
+
+# machine-specific MCP config (absolute paths)
+.mcp.json
+
+# SolidCraft backups and lock files
+*.bak
+.~*
+
+# third-party vendor models (licence unknown) - download yourself, see cad/README.md
+cad/parts/
