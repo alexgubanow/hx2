@@ -18,8 +18,8 @@ and shows you the one number that matters most: **the difference between them (�
 └────────────────────────┘
 ```
 
-> **Status: idea / design stage.** Nothing is built or verified yet.
-> Everything in this repo is a proposal. Numbers are calculated, not measured.
+> **Status: design stage.** The firmware builds and probe v1 is modelled and ready to print,
+> but nothing is verified yet. Numbers are calculated, not measured.
 
 ---
 
@@ -105,7 +105,8 @@ hx2/
 │   ├── measurement.md   method, math, Hz comparison, error budget
 │   ├── mcu.md           PoC on RP2040, RP2354A for the PCB
 │   ├── bom.md           parts list, cheap/local options, donor scales
-│   └── risks.md         assumptions & design risks, with validation tests
+│   ├── risks.md         assumptions & design risks, with validation tests
+│   └── img/             probe renders
 ├── firmware/            PlatformIO project (RP2040/RP2350, Arduino-Pico core)
 ├── hardware/            wiring, schematic, later the custom PCB
 ├── cad/                 probe fixture models + geometry parameters
@@ -115,7 +116,7 @@ hx2/
 
 ## Roadmap
 
-- [x] **v0: design.** Method, MCU choice, BOM, risks, firmware skeleton *(this commit)*
+- [x] **v0: design.** Method, MCU choice, BOM, risks, firmware (builds, untested), probe v1 model
 - [ ] **v0.1: bench electronics.** RP2040 dev board, two HX711s and an OLED on a breadboard, raw counts,
       check noise and drift with the load cells clamped to a desk
 - [ ] **v0.2: calibration rig.** A belt over a bearing with hanging masses (known tension).

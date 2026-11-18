@@ -62,8 +62,7 @@ component), not from a vendor file. Vendor STEP models go in `cad/parts/`, which
 
 1. Press 2× M3 heat-set inserts (short, Ø4 hole) into the roof from the top.
 2. **Cell:** insert it from below at 30–45°, thin end first, with the nose off. Swing it level, push it up
-   until its top sits on the rib, and fix it with 2× M3 from below. These screws need to be about 1.25 mm
-   longer than with the earlier, lower roof.
+   until its top sits on the rib, and fix it with 2× M3 (about M3×10–12, check against your cell) from below.
 3. **Nose:** slide the sleeve onto the thin end until its cap touches the cell tip. Fix it with
    2× M3×6 countersunk (DIN 7991).
 4. **Bearings:** for each post, slide 3× MR105ZZ onto a tube and set the stack in its pocket. Drive an

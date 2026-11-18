@@ -63,7 +63,8 @@ dT/T ≈ ds/s − dd/d
 ```
 
 - A **0.1 mm** error in `d` (2.5 mm) gives a **4 %** tension error. **`d` is the critical
-  dimension.** Set it with a metal hard stop and calibrate it out (see below).
+  dimension.** Fix it mechanically (in probe v1, by the frame geometry, so print accuracy
+  matters) and calibrate the rest out (stage 2, below).
 - A 0.5 mm error in `s` (80 mm) gives 0.6 %. Not critical.
 - Load-cell beam compliance (a 1 kg bar cell deflects roughly 0.1–0.3 mm at full scale) eats into
   `d` in proportion to the force. That is linear, so end-to-end calibration absorbs it.

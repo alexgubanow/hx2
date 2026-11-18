@@ -28,7 +28,9 @@ not fully seated, and grip force leaking into the load cell all change `F`.
   jaw can be. It's also a chance for a double-decker head that reads A and B at the same spot.
 - **6 mm vs 9 mm:** the jaw must take 9 mm and still center a 6 mm belt.
 - **Test (cheap and needed now):** collect free span, clearance on both faces, belt width
-  and stack gap from 4–5 printer models (start with the Trident AWD) before drawing the fixture.
+  and stack gap from 4–5 printer models (start with the Trident AWD). Probe v1 assumes a free
+  span ≥ 100 mm, about 8.1 mm on the far side of the belt and 24 mm on our side
+  ([cad/README.md](../cad/README.md)). Check these before printing a set of probes.
 
 ## 3. Tension isn't one number per belt
 
@@ -103,7 +105,8 @@ all unspecified, and replacements won't be identical.
 - Calibration with a weight (counts → N) is easy to get wrong: wrong orientation, or a
   cable tugging on the probe. Do tare and calibration in the same pose.
 - Flash wear isn't a concern (calibration saves are rare).
-- Storage has to survive firmware updates. A versioned struct with CRC is in the skeleton.
+- Storage has to survive firmware updates. The firmware keeps a versioned struct with CRC
+  (`firmware/src/storage.*`).
 
 ## 9. Things this design assumes and you should confirm
 

@@ -31,16 +31,22 @@ B   15.61 N  =
 ## Serial console (115200)
 
 ```
-tare                  zero both (probes unloaded)
+tare [a|b]            zero both channels, or just one (probes unloaded)
 cal a 200             200 g resting on probe A's nose (probe upside down, nose up)
 rig a 9.81            probe A clamped on the rig belt, 1 kg hanging
 fix a 80 2.5          probe A geometry s=80 mm, d=2.5 mm
 show | save | load
-stream                CSV for creep/noise logging
+stream                toggle CSV (ms,rawA,rawB,TA,TB) for creep/noise logging
+help
 ```
 
 Button: **short press = tare**, **long press = hold** (freeze the display).
 
+**Power-up tare:** like a kitchen scale, both channels are zeroed at boot, so start with the
+probes unloaded. The saved zero offset is only used for a channel that doesn't answer in time.
+`save` stores the calibration (counts/N, geometry, `k`) for the next boot.
+
 ## Status
 
-Skeleton. **Not compiled or run on hardware yet.**
+Builds with PlatformIO for the Pico. **Not validated on hardware yet:** no noise, drift or
+calibration data so far.

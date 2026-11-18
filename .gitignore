@@ -2,14 +2,11 @@
 .vscode/
 __pycache__/
 *.pyc
-# CAD exports are committed deliberately; ignore backups
-*.FCBak
-*.FCStd1
 
 # machine-specific MCP config (absolute paths)
 .mcp.json
 
-# SolidCraft backups and lock files
+# SolidCraft backups and lock files (CAD exports in cad/export/ are committed deliberately)
 *.bak
 .~*
 
