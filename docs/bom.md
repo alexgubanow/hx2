@@ -60,12 +60,14 @@ load cell. Only digital lines (VCC, GND, DT, SCK) run down the cable, so the
 |---|---|---|
 | 1 | Printed frame | `hx2-probe-v1-frame.stl`. **PETG/ASA/ABS, not PLA** (PLA creeps under steady load) |
 | 1 | Printed nose sleeve | `hx2-probe-v1-nose.stl`, same material |
+| — | Fit-test coupon (optional) | `hx2-probe-v1-coupon-posts.stl`, about 2 g. Print it first to check the posts, rib and inserts against your cell |
 | 6 | MR105ZZ bearing (5×10×4) | 3 per post. Wide enough to bridge several GT2 teeth |
 | 2 | Axle tube, 12 mm long, OD 4.9–5.0 / ID 3.2 | Brass/steel tube (best) or print `hx2-probe-v1-spacer.stl` |
 | 2 | M3×25 countersunk (DIN 7991) | Bearing axles. Self-tap into the frame |
 | 2 | M3×6 countersunk (DIN 7991) | Nose sleeve into the cell's thin-end threads |
 | 2 | M3 heat-set insert, short (≈3 mm, Ø4 hole) | Roof, holds the cell |
-| 2 | M3 screw, length to suit (≈M3×8–10) | Cell thick end into the inserts, from below |
+| 2 | M3 screw, ≈M3×10–12 | Cell thick end into the inserts, from below (the cell sits on the post rib) |
+| 2 | M3×6 self-tapping (or M3 screw into the Ø2.5 pilot) | HX711 board onto its standoffs in the bay |
 | 1 | Load cell | Spoon-scale cell (PoC), flipped, thin-end step towards the belt |
 | 1 | HX711 module | Inside the probe head |
 | 2 | 1 kΩ resistor, matched (0.1 % / 25 ppm or same reel) | **Only for a 3-wire half-bridge cell**, completes the bridge (see [hardware/README.md](../hardware/README.md)) |
