@@ -158,8 +158,16 @@ void setup() {
 
     storage::begin();
     const bool loaded = storage::load(chA.cal, chB.cal);
+
+    // Power-up tare, like a kitchen scale: whatever is on the probes at boot is zero.
+    // The saved offset is only a fallback for a channel that doesn't answer in time.
+    display::message("HX2", "zeroing...");
+    const bool zeroA = chA.tare(&chB);
+    const bool zeroB = chB.tare(&chA);
+
     delay(300);
     Serial.println(loaded ? "HX2: calibration loaded" : "HX2: no calibration, using defaults");
+    Serial.printf("HX2: power-up tare A=%s B=%s\n", zeroA ? "ok" : "no data", zeroB ? "ok" : "no data");
     help();
 }
 
